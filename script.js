@@ -1,18 +1,5 @@
-// ── TYPING EFFECT ──
-const roles = ["Data Analyst", "SQL Developer", "Power BI Developer", "Python Enthusiast"];
-let roleIdx = 0, charIdx = 0, deleting = false;
-
-function type() {
-  const el = document.getElementById("typing");
-  if (!el) return;
-  const role = roles[roleIdx];
-  el.textContent = deleting ? role.slice(0, charIdx--) : role.slice(0, charIdx++);
-  let speed = deleting ? 35 : 70;
-  if (!deleting && charIdx > role.length) { speed = 1800; deleting = true; }
-  else if (deleting && charIdx < 0) { deleting = false; roleIdx = (roleIdx + 1) % roles.length; speed = 300; }
-  setTimeout(type, speed);
-}
-setTimeout(type, 600);
+// ── MARK JS AS ACTIVE (so CSS reveal hides work safely) ──
+document.body.classList.add("js-ready");
 
 // ── NAV SHRINK ON SCROLL ──
 const navbar = document.getElementById("navbar");
