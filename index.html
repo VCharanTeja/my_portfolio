@@ -1,245 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>CharanTeja Vallabhaneni | Data Analyst</title>
-
-<link rel="stylesheet" href="style.css">
-
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CharanTeja · Data Analyst</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<!-- NAVBAR -->
-
-<nav class="navbar">
-
-<div class="container nav-flex">
-
-<h2 class="logo">CharanTeja</h2>
-
-<ul>
-
-<li><a href="#projects">Projects</a></li>
-<li><a href="#skills">Skills</a></li>
-<li><a href="#contact">Contact</a></li>
-
-</ul>
-
-</div>
-
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-brand">Charan<span>Teja</span></div>
+  <div class="nav-links">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
 </nav>
 
-
-<!-- HERO SECTION -->
-
-<section class="hero">
-
-<div class="container hero-grid">
-
-<div>
-
-<h1>Data Analyst</h1>
-
-<p class="hero-sub">
-
-Turning raw data into meaningful business insights
-using SQL, Python, Excel and Power BI.
-
-</p>
-
-<div class="hero-buttons">
-
-<a href="#projects" class="btn">View Projects</a>
-
-<a href="resume.pdf" class="btn-outline">Download Resume</a>
-
-</div>
-
-<div class="social">
-
-<a href="#"><i class="fa-brands fa-github"></i></a>
-
-<a href="#"><i class="fa-brands fa-linkedin"></i></a>
-
-<a href="#"><i class="fa-solid fa-envelope"></i></a>
-
-</div>
-
-</div>
-
-<div>
-
-<img src="profile.jpg" class="profile">
-
-</div>
-
-</div>
-
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-inner">
+    <div class="hero-left">
+      <div class="hero-badge">Available for opportunities</div>
+      <h1 class="hero-title">
+        Hi, I'm CharanTeja.<br>
+        <span class="typing-wrap"><span id="typing"></span><span class="cursor"></span></span>
+      </h1>
+      <p class="hero-sub">
+        I turn raw data into clear business decisions — using SQL, Python, Power BI & Excel to build dashboards and uncover insights that matter.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn-primary">View Projects</a>
+        <a href="#" class="btn-outline">Download Resume</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-num">$24.9M+</div>
+          <div class="stat-label">Revenue Analyzed</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">25K+</div>
+          <div class="stat-label">Orders Processed</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">100K+</div>
+          <div class="stat-label">Records via SQL</div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="profile-ring">
+        <img src="profile.jpg" alt="CharanTeja" class="profile-img"
+          onerror="this.style.display='none'; this.parentElement.innerHTML='<div style=\'width:100%;height:100%;border-radius:50%;background:linear-gradient(135deg,rgba(0,229,255,0.2),rgba(0,100,255,0.2));display:flex;align-items:center;justify-content:center;font-size:80px\'>CT</div>'">
+      </div>
+      <div class="profile-glow"></div>
+    </div>
+  </div>
 </section>
 
-
-<!-- STATS -->
-
-<section class="stats">
-
-<div class="stat">
-
-<h2>3+</h2>
-<p>Projects</p>
-
-</div>
-
-<div class="stat">
-
-<h2>4</h2>
-<p>Tools</p>
-
-</div>
-
-<div class="stat">
-
-<h2>10+</h2>
-<p>Visualizations</p>
-
-</div>
-
-<div class="stat">
-
-<h2>2</h2>
-<p>Dashboards</p>
-
-</div>
-
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-label reveal">About Me</div>
+  <h2 class="section-title reveal">Data Analyst with a<br>Business Mindset</h2>
+  <div class="about-grid">
+    <div class="about-text reveal">
+      <p>I'm passionate about transforming messy, complex data into clear narratives that drive real decisions. I specialize in building dashboards, writing efficient SQL, and creating visualizations that non-technical stakeholders actually understand.</p>
+      <p>Through hands-on projects, I've analyzed millions in revenue, tracked regional KPIs, and automated reporting workflows — delivering actionable recommendations, not just pretty charts.</p>
+      <p>I'm actively seeking a Data Analyst role where I can contribute to a data-driven culture and grow alongside a strong team.</p>
+    </div>
+    <div class="about-cards reveal-children">
+      <div class="about-card">
+        <div class="about-card-icon">📊</div>
+        <div class="about-card-title">Dashboard Development</div>
+        <div class="about-card-text">Power BI dashboards that stakeholders actually use and understand</div>
+      </div>
+      <div class="about-card">
+        <div class="about-card-icon">🔍</div>
+        <div class="about-card-title">Data Analysis & SQL</div>
+        <div class="about-card-text">Complex queries on 100K+ record datasets to surface hidden trends</div>
+      </div>
+      <div class="about-card">
+        <div class="about-card-icon">🐍</div>
+        <div class="about-card-title">Python & Automation</div>
+        <div class="about-card-text">Pandas, NumPy, and visualization libraries for deep-dive analysis</div>
+      </div>
+    </div>
+  </div>
 </section>
-
 
 <!-- SKILLS -->
-
-<section id="skills" class="skills">
-
-<h2>Tools & Technologies</h2>
-
-<div class="skills-grid">
-
-<div><i class="fa-solid fa-database"></i> SQL</div>
-
-<div><i class="fa-brands fa-python"></i> Python</div>
-
-<div><i class="fa-solid fa-chart-line"></i> Power BI</div>
-
-<div><i class="fa-solid fa-file-excel"></i> Excel</div>
-
-</div>
-
+<section id="skills">
+  <div class="section-label reveal">Tools & Technologies</div>
+  <h2 class="section-title reveal">My Technical Stack</h2>
+  <div class="skills-grid reveal-children">
+    <div class="skill-card">
+      <div class="skill-icon">🗄️</div>
+      <div class="skill-name">SQL</div>
+      <div class="skill-desc">Joins, CTEs, Window Functions</div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">🐍</div>
+      <div class="skill-name">Python</div>
+      <div class="skill-desc">Pandas, NumPy, Matplotlib</div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">📊</div>
+      <div class="skill-name">Power BI</div>
+      <div class="skill-desc">DAX, Data Modeling, Reports</div>
+    </div>
+    <div class="skill-card">
+      <div class="skill-icon">📗</div>
+      <div class="skill-name">Excel</div>
+      <div class="skill-desc">Pivot Tables, VBA, Dashboards</div>
+    </div>
+  </div>
 </section>
 
-
-
-
 <!-- PROJECTS -->
+<section id="projects">
+  <div class="section-label reveal">Work</div>
+  <h2 class="section-title reveal">Featured Projects</h2>
+  <div class="projects-grid reveal-children">
 
-<section id="projects" class="projects">
+    <!-- Project 1 -->
+    <div class="project-card">
+      <div class="card-thumb">
+        <img src="images/project1.png" onerror="this.style.display='none'">
+        <span class="thumb-emoji">🛒</span>
+      </div>
+      <div class="card-body">
+        <div class="card-tag">Power BI · Excel</div>
+        <div class="card-title">E-commerce Sales Dashboard</div>
+        <div class="card-desc">Interactive dashboard analyzing sales performance, product trends, and customer behavior across an entire e-commerce operation.</div>
+        <div class="card-metrics">
+          <div class="metric"><span class="metric-dot"></span>$24.9M+ revenue analyzed</div>
+          <div class="metric"><span class="metric-dot"></span>25K+ orders processed</div>
+          <div class="metric"><span class="metric-dot"></span>2.2% return rate tracked</div>
+        </div>
+        <div class="card-links">
+          <a href="#" class="card-link solid">GitHub</a>
+          <a href="#" class="card-link ghost">Live Demo</a>
+        </div>
+      </div>
+    </div>
 
-<h2>Projects</h2>
+    <!-- Project 2 -->
+    <div class="project-card">
+      <div class="card-thumb">
+        <img src="images/project2.png" onerror="this.style.display='none'">
+        <span class="thumb-emoji">🌍</span>
+      </div>
+      <div class="card-body">
+        <div class="card-tag">Power BI · DAX</div>
+        <div class="card-title">Retail KPI Dashboard</div>
+        <div class="card-desc">Regional performance analysis tracking KPIs across multiple markets with dynamic filtering and drill-down capabilities.</div>
+        <div class="card-metrics">
+          <div class="metric"><span class="metric-dot"></span>113K+ transactions analyzed</div>
+          <div class="metric"><span class="metric-dot"></span>60% profit margin achieved</div>
+          <div class="metric"><span class="metric-dot"></span>USA identified as top market</div>
+        </div>
+        <div class="card-links">
+          <a href="#" class="card-link solid">GitHub</a>
+          <a href="#" class="card-link ghost">Live Demo</a>
+        </div>
+      </div>
+    </div>
 
-<div class="project-grid">
+    <!-- Project 3 -->
+    <div class="project-card">
+      <div class="card-thumb">
+        <img src="images/project3.png" onerror="this.style.display='none'">
+        <span class="thumb-emoji">🔍</span>
+      </div>
+      <div class="card-body">
+        <div class="card-tag">SQL · Python</div>
+        <div class="card-title">SQL Data Analysis</div>
+        <div class="card-desc">Deep-dive analysis using complex SQL queries to segment customers, identify revenue drivers, and analyze repeat purchase patterns.</div>
+        <div class="card-metrics">
+          <div class="metric"><span class="metric-dot"></span>100K+ records processed</div>
+          <div class="metric"><span class="metric-dot"></span>Top customer segments identified</div>
+          <div class="metric"><span class="metric-dot"></span>Repeat purchase trends revealed</div>
+        </div>
+        <div class="card-links">
+          <a href="#" class="card-link solid">GitHub</a>
+        </div>
+      </div>
+    </div>
 
-<!-- Project 1 -->
-
-<div class="card">
-
-<img src="images/dashboard.png" class="project-img">
-
-<h3>AdventureWorks Sales Dashboard</h3>
-
-<p>
-Interactive Power BI dashboard analyzing revenue trends,
-regional performance and product profitability.
-</p>
-
-<div class="project-buttons">
-
-<a href="https://github.com/YOUR_USERNAME/AdventureWorks-PowerBI-Dashboard" 
-class="btn">GitHub</a>
-
-<a href="#" class="btn-outline">View Dashboard</a>
-
-</div>
-
-</div>
-
-
-<!-- Project 2 -->
-
-<div class="card">
-
-<h3>Customer Churn Analysis</h3>
-
-<p>
-Machine learning model predicting customer churn using
-Python, Pandas and exploratory data analysis.
-</p>
-
-<div class="project-buttons">
-
-<a href="#" class="btn-outline">View Project</a>
-
-</div>
-
-</div>
-
-
-<!-- Project 3 -->
-
-<div class="card">
-
-<h3>Retail SQL Analysis</h3>
-
-<p>
-Business insights from retail data using advanced SQL queries
-including CTEs, window functions and aggregations.
-</p>
-
-<div class="project-buttons">
-
-<a href="#" class="btn-outline">View Project</a>
-
-</div>
-
-</div>
-
-</div>
-
+  </div>
 </section>
 
 <!-- CONTACT -->
-
-<section id="contact" class="contact">
-
-<h2>Contact</h2>
-
-<p>Open to Data Analyst opportunities.</p>
-
-<div class="contact-links">
-
-<a href="#"><i class="fa-solid fa-envelope"></i> Email</a>
-
-<a href="#"><i class="fa-brands fa-github"></i> GitHub</a>
-
-<a href="#"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
-
-</div>
-
+<section id="contact">
+  <div class="contact-inner reveal">
+    <span class="section-label">Let's Connect</span>
+    <h2 class="section-title">Open to Data Analyst Roles</h2>
+    <p class="contact-sub">I'm actively seeking full-time opportunities. If you're looking for a data analyst who's passionate about turning numbers into business impact, let's talk.</p>
+    <div class="contact-links">
+      <a href="mailto:youremail@gmail.com" class="contact-link">✉️ Email Me</a>
+      <a href="https://github.com" class="contact-link" target="_blank">🐙 GitHub</a>
+      <a href="https://linkedin.com" class="contact-link" target="_blank">💼 LinkedIn</a>
+    </div>
+  </div>
 </section>
 
+<footer>
+  Built by CharanTeja · Data Analyst · 2025
+</footer>
 
 <script src="script.js"></script>
 
