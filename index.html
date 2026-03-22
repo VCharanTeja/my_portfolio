@@ -13,14 +13,20 @@
 <!-- NAV -->
 <nav id="navbar">
   <div class="nav-brand">CharanTeja<span> Vallabhaneni</span></div>
-  <div class="nav-links">
+  <div class="nav-links" id="nav-links">
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
     <a href="#education">Education</a>
     <a href="#contact">Contact</a>
   </div>
+  <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
 </nav>
+<div class="nav-overlay" id="nav-overlay"></div>
 
 <!-- HERO -->
 <section id="hero">
@@ -36,16 +42,16 @@
       </p>
       <div class="hero-actions">
         <a href="#projects" class="btn-primary">View Projects</a>
-        <a href="#" class="btn-outline">Download Resume</a>
+        <a href="#F:\Portfolio\CharanTeja Vallabhaneni Resume.pdf" class="btn-outline">Download Resume</a>
       </div>
       <div class="hero-stats">
         <div class="stat-item">
-          <div class="stat-num">$24.9M+</div>
+          <div class="stat-num">$24.9M</div>
           <div class="stat-label">Revenue Analyzed</div>
         </div>
         <div class="stat-item">
-          <div class="stat-num">25K+</div>
-          <div class="stat-label">Orders Processed</div>
+          <div class="stat-num">113K+</div>
+          <div class="stat-label">Transactions Tracked</div>
         </div>
         <div class="stat-item">
           <div class="stat-num">100K+</div>
@@ -130,21 +136,21 @@
     <!-- Project 1 -->
     <div class="project-card">
       <div class="card-thumb">
-        <img src="images/project1.png" onerror="this.style.display='none'">
-        <span class="thumb-emoji">🛒</span>
+        <img src="SalesDashboard.png" onerror="this.style.display='none'">
+        <span class="thumb-emoji"></span>
       </div>
       <div class="card-body">
-        <div class="card-tag">Power BI · Excel</div>
-        <div class="card-title">E-commerce Sales Dashboard</div>
-        <div class="card-desc">Interactive dashboard analyzing sales performance, product trends, and customer behavior across an entire e-commerce operation.</div>
+        <div class="card-tag">Power BI</div>
+        <div class="card-title">AdventureWorks Sales Dashboard</div>
+        <div class="card-desc">End-to-end sales performance dashboard tracking revenue trends, product category performance, and return rates for a bike shop operation.</div>
         <div class="card-metrics">
-          <div class="metric"><span class="metric-dot"></span>$24.9M+ revenue analyzed</div>
-          <div class="metric"><span class="metric-dot"></span>25K+ orders processed</div>
-          <div class="metric"><span class="metric-dot"></span>2.2% return rate tracked</div>
+          <div class="metric"><span class="metric-dot"></span>$24.9M revenue · $10.5M profit tracked</div>
+          <div class="metric"><span class="metric-dot"></span>25.2K orders · 2.2% return rate</div>
+          <div class="metric"><span class="metric-dot"></span>Accessories identified as top category</div>
         </div>
         <div class="card-links">
           <a href="#" class="card-link solid">GitHub</a>
-          <a href="#" class="card-link ghost">Live Demo</a>
+          <a href="#" class="card-link ghost">Dashboard</a>
         </div>
       </div>
     </div>
@@ -152,21 +158,21 @@
     <!-- Project 2 -->
     <div class="project-card">
       <div class="card-thumb">
-        <img src="images/project2.png" onerror="this.style.display='none'">
-        <span class="thumb-emoji">🌍</span>
+        <img src="PerformanceDashboard.png" onerror="this.style.display='none'">
+        <span class="thumb-emoji"></span>
       </div>
       <div class="card-body">
         <div class="card-tag">Power BI · DAX</div>
-        <div class="card-title">Retail KPI Dashboard</div>
-        <div class="card-desc">Regional performance analysis tracking KPIs across multiple markets with dynamic filtering and drill-down capabilities.</div>
+        <div class="card-title">Maven Market Performance Dashboard</div>
+        <div class="card-desc">Multi-region retail dashboard with brand-level KPI tracking, geographic sales mapping, and revenue vs target analysis across USA, Canada & Mexico.</div>
         <div class="card-metrics">
-          <div class="metric"><span class="metric-dot"></span>113K+ transactions analyzed</div>
-          <div class="metric"><span class="metric-dot"></span>60% profit margin achieved</div>
-          <div class="metric"><span class="metric-dot"></span>USA identified as top market</div>
+          <div class="metric"><span class="metric-dot"></span>113.6K transactions · $449K profit</div>
+          <div class="metric"><span class="metric-dot"></span>59.94% profit margin achieved</div>
+          <div class="metric"><span class="metric-dot"></span>USA identified as top revenue market</div>
         </div>
         <div class="card-links">
           <a href="#" class="card-link solid">GitHub</a>
-          <a href="#" class="card-link ghost">Live Demo</a>
+          <a href="#" class="card-link ghost">Dashboard</a>
         </div>
       </div>
     </div>
@@ -174,17 +180,17 @@
     <!-- Project 3 -->
     <div class="project-card">
       <div class="card-thumb">
-        <img src="images/project3.png" onerror="this.style.display='none'">
-        <span class="thumb-emoji">🔍</span>
+        <img src="sqlimage.png" onerror="this.style.display='none'">
+        <span class="thumb-emoji"></span>
       </div>
       <div class="card-body">
-        <div class="card-tag">SQL · Python</div>
-        <div class="card-title">SQL Data Analysis</div>
-        <div class="card-desc">Deep-dive analysis using complex SQL queries to segment customers, identify revenue drivers, and analyze repeat purchase patterns.</div>
+        <div class="card-tag">SQL</div>
+        <div class="card-title">SQL Data Analysis Pipeline</div>
+        <div class="card-desc">Structured 13-file SQL pipeline from database setup to final customer and product reports — covering segmentation, ranking, and performance analysis.</div>
         <div class="card-metrics">
-          <div class="metric"><span class="metric-dot"></span>100K+ records processed</div>
-          <div class="metric"><span class="metric-dot"></span>Top customer segments identified</div>
-          <div class="metric"><span class="metric-dot"></span>Repeat purchase trends revealed</div>
+          <div class="metric"><span class="metric-dot"></span>100K+ records processed end-to-end</div>
+          <div class="metric"><span class="metric-dot"></span>Customer & product report deliverables</div>
+          <div class="metric"><span class="metric-dot"></span>Segmentation, ranking & trend analysis</div>
         </div>
         <div class="card-links">
           <a href="#" class="card-link solid">GitHub</a>
