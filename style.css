@@ -768,8 +768,9 @@ footer {
   .hamburger { display: flex; }
 
   .nav-links {
+    display: none;
     position: fixed;
-    top: 0; right: -100%;
+    top: 0; right: 0;
     width: 72%;
     max-width: 300px;
     height: 100vh;
@@ -781,10 +782,16 @@ footer {
     align-items: flex-start;
     padding: 60px 40px;
     gap: 28px;
-    transition: right 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: opacity 0.3s ease, transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
     z-index: 150;
+    transform: translateX(100%);
+    opacity: 0;
   }
-  .nav-links.open { right: 0; }
+  .nav-links.open {
+    display: flex;
+    transform: translateX(0);
+    opacity: 1;
+  }
   .nav-links a { font-size: 18px; font-weight: 600; color: var(--text); }
   .nav-links a:hover { color: var(--cyan); }
 
