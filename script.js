@@ -11,6 +11,9 @@ document.addEventListener("DOMContentLoaded", function () {
   function openMenu() {
     isOpen = true;
     menu.style.cssText = "display:flex !important; flex-direction:column; position:fixed; top:0; right:0; width:72%; max-width:300px; height:100vh; background:rgba(6,10,18,0.98); backdrop-filter:blur(24px); border-left:1px solid rgba(255,255,255,0.08); padding:60px 40px; gap:28px; z-index:150; justify-content:center; align-items:flex-start;";
+    menu.querySelectorAll("a").forEach(function(link) {
+      link.style.cssText = "color:#e8edf5 !important; font-size:20px; font-weight:600; text-decoration:none; display:block;";
+    });
     overlay.style.display = "block";
     document.body.style.overflow = "hidden";
     var spans = btn.querySelectorAll("span");
@@ -22,6 +25,9 @@ document.addEventListener("DOMContentLoaded", function () {
   function closeMenu() {
     isOpen = false;
     menu.style.cssText = "";
+    menu.querySelectorAll("a").forEach(function(link) {
+      link.style.cssText = "";
+    });
     overlay.style.display = "none";
     document.body.style.overflow = "";
     var spans = btn.querySelectorAll("span");
