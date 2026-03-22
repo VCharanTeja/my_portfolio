@@ -1,56 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
 
+  // ── MARK JS AS ACTIVE ──
   document.body.classList.add("js-ready");
-
-  // ── HAMBURGER — inline style approach (no CSS class conflicts) ──
-  var btn = document.getElementById("hamburger");
-  var menu = document.getElementById("nav-links");
-  var overlay = document.getElementById("nav-overlay");
-  var isOpen = false;
-
-  function openMenu() {
-    isOpen = true;
-    menu.style.cssText = "display:flex !important; flex-direction:column; position:fixed; top:0; right:0; width:72%; max-width:300px; height:100vh; background:rgba(6,10,18,0.98); backdrop-filter:blur(24px); border-left:1px solid rgba(255,255,255,0.08); padding:60px 40px; gap:28px; z-index:150; justify-content:center; align-items:flex-start;";
-    menu.querySelectorAll("a").forEach(function(link) {
-      link.style.cssText = "color:#e8edf5 !important; font-size:20px; font-weight:600; text-decoration:none; display:block;";
-    });
-    overlay.style.display = "block";
-    document.body.style.overflow = "hidden";
-    var spans = btn.querySelectorAll("span");
-    spans[0].style.transform = "translateY(7px) rotate(45deg)";
-    spans[1].style.opacity = "0";
-    spans[2].style.transform = "translateY(-7px) rotate(-45deg)";
-  }
-
-  function closeMenu() {
-    isOpen = false;
-    menu.style.cssText = "";
-    menu.querySelectorAll("a").forEach(function(link) {
-      link.style.cssText = "";
-    });
-    overlay.style.display = "none";
-    document.body.style.overflow = "";
-    var spans = btn.querySelectorAll("span");
-    spans[0].style.transform = "";
-    spans[1].style.opacity = "1";
-    spans[2].style.transform = "";
-  }
-
-  if (btn) {
-    btn.addEventListener("click", function () {
-      isOpen ? closeMenu() : openMenu();
-    });
-  }
-
-  if (overlay) {
-    overlay.addEventListener("click", closeMenu);
-  }
-
-  if (menu) {
-    menu.querySelectorAll("a").forEach(function (link) {
-      link.addEventListener("click", closeMenu);
-    });
-  }
 
   // ── NAV SHRINK ON SCROLL ──
   var navbar = document.getElementById("navbar");
