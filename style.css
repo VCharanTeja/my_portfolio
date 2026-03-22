@@ -764,11 +764,9 @@ footer {
    (481px–768px) iPad mini, large phones
 ══════════════════════════════════════════ */
 @media (max-width: 768px) {
-  /* Show hamburger, hide nav links */
   .hamburger { display: flex; }
 
   .nav-links {
-    display: none;
     position: fixed;
     top: 0; right: 0;
     width: 72%;
@@ -782,16 +780,18 @@ footer {
     align-items: flex-start;
     padding: 60px 40px;
     gap: 28px;
-    transition: opacity 0.3s ease, transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
     z-index: 150;
+    /* Hidden by default */
+    visibility: hidden;
     transform: translateX(100%);
-    opacity: 0;
+    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.35s;
   }
+
   .nav-links.open {
-    display: flex;
+    visibility: visible;
     transform: translateX(0);
-    opacity: 1;
   }
+
   .nav-links a { font-size: 18px; font-weight: 600; color: var(--text); }
   .nav-links a:hover { color: var(--cyan); }
 
