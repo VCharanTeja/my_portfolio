@@ -638,9 +638,13 @@ footer {
 }
 
 .reveal-children.visible > *:nth-child(1) { opacity: 1 !important; transform: none !important; transition-delay: 0.05s; }
-.reveal-children.visible > *:nth-child(2) { opacity: 1 !important; transform: none !important; transition-delay: 0.15s; }
-.reveal-children.visible > *:nth-child(3) { opacity: 1 !important; transform: none !important; transition-delay: 0.25s; }
-.reveal-children.visible > *:nth-child(4) { opacity: 1 !important; transform: none !important; transition-delay: 0.35s; }
+.reveal-children.visible > *:nth-child(2) { opacity: 1 !important; transform: none !important; transition-delay: 0.10s; }
+.reveal-children.visible > *:nth-child(3) { opacity: 1 !important; transform: none !important; transition-delay: 0.15s; }
+.reveal-children.visible > *:nth-child(4) { opacity: 1 !important; transform: none !important; transition-delay: 0.20s; }
+.reveal-children.visible > *:nth-child(5) { opacity: 1 !important; transform: none !important; transition-delay: 0.25s; }
+.reveal-children.visible > *:nth-child(6) { opacity: 1 !important; transform: none !important; transition-delay: 0.30s; }
+.reveal-children.visible > *:nth-child(7) { opacity: 1 !important; transform: none !important; transition-delay: 0.35s; }
+.reveal-children.visible > *:nth-child(8) { opacity: 1 !important; transform: none !important; transition-delay: 0.40s; }
 
 /* ── HERO ENTRANCE - no animations, always visible ── */
 
